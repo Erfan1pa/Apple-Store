@@ -1,2 +1,2 @@
 # Apple-Store
-Simple apple store template(Responsive)
+apple store template(Responsive)
