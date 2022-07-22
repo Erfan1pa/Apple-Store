@@ -13,13 +13,12 @@
 }
 .All-content {
   width: 100%;
-  height: fit-content;
+  min-height: 100vh;
+  position: relative;
   background-image: url("/Images/BG.jpg");
   background-position: center;
   background-size: cover;
-}
-.web-page {
-  height: 613px;
+  background-repeat: no-repeat;
 }
 .borderDisplay {
   width: 100%;
@@ -32,6 +31,10 @@
     rgba(0, 0, 0, 0) 60%,
     rgba(57, 71, 54, 1) 100%
   );
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
 .navigation {
   display: flex;
@@ -212,9 +215,6 @@
   }
 }
 @media only screen and (max-width: 1120px) {
-  .web-page {
-    height: fit-content;
-  }
   .contianer {
     width: 100%;
     flex-wrap: wrap;
