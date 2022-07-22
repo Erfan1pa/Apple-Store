@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "SFPRO-font";
+  src: url("/Font/SFPRODISPLAYREGULAR.OTF");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SFPRO-font";
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+.All-content {
+  width: 100%;
+  height: fit-content;
+  background-image: url("/Images/BG.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.web-page {
+  height: 613px;
+}
+.borderDisplay {
+  width: 100%;
+  height: 20px;
+  background: rgb(57, 71, 54);
+  background: linear-gradient(
+    45deg,
+    rgba(57, 71, 54, 1) 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(57, 71, 54, 1) 100%
+  );
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left-nav,
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 18px;
+}
+.left-nav:hover {
+  cursor: pointer;
+}
+.list-nav:hover {
+  color: rgb(57, 71, 54);
+}
+.navigation-bar {
+  text-align: end;
+  display: none;
+  list-style-type: none;
+  padding: 20px;
+  width: 150px;
+  color: #fff;
+  transition: all 0s;
+  background-color: transparent;
+}
+.responsive-bar {
+  width: 150px;
+  height: fit-content;
+  position: absolute;
+  display: none;
+  background-color: rgba(57, 71, 54, 0.3);
+  border-radius: 0px 0px 0px 10px;
+  right: 0;
+  z-index: 3;
+}
+.list-bar {
+  margin: 0px;
+  color: #fff;
+  list-style-type: none;
+  padding: 15px;
+}
+.list-bar:hover {
+  background-color: rgba(250, 250, 250, 0.8);
+  color: rgb(0, 0, 0);
+}
+.Apple-logo {
+  width: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.Name-product {
+  display: inline-block;
+  margin-top: 13px;
+  margin-left: 8px;
+  color: rgb(57, 71, 54);
+}
+.Name-product span {
+  font-size: 10px;
+}
+.right-nav {
+  position: relative;
+
+  overflow: hidden;
+}
+.list-nav {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.contianer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+.left-container {
+  width: 50%;
+  margin-left: 25px;
+  margin-top: 100px;
+}
+.left-container h2 {
+  font-style: italic;
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 30px;
+}
+.left-container h1 {
+  font-size: 68px;
+  color: rgb(57, 71, 54);
+}
+.left-container h4 {
+  color: rgb(57, 71, 54);
+  font-size: 20px;
+}
+.left-container p {
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-weight: normal;
+  margin-top: 40px;
+  line-height: 25px;
+}
+.shop {
+  width: 110px;
+  height: 40px;
+  border: 3px solid rgb(57, 71, 54);
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 40px;
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.shop:hover {
+  background-color: #fff;
+  color: rgb(57, 71, 54);
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+.right-container {
+  width: 50%;
+  margin-top: 20px;
+  position: relative;
+}
+.img-phone {
+  width: 400px;
+  display: none;
+  margin-left: 25%;
+}
+.show {
+  display: inline-block;
+}
+.color {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+}
+.pickup {
+  width: 10%;
+  padding-top: 20px;
+}
+.pickup:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.scale {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 1270px) {
+  .left-container h2 {
+    font-size: 23px;
+  }
+  .left-container h1 {
+    font-size: 56px;
+  }
+  .left-container h4 {
+    font-size: 18px;
+  }
+  .left-container p {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .web-page {
+    height: fit-content;
+  }
+  .contianer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .left-container {
+    text-align: center;
+    width: 100%;
+  }
+  .left-container p {
+    width: 40%;
+    margin: auto;
+  }
+  .right-container {
+    margin-top: 150px;
+    align-items: center;
+    width: 100%;
+  }
+  .color {
+    position: static;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .pic-iphone .img-phone {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .list-nav {
+    display: none;
+  }
+  .navigation-bar {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .left-container p {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .pickup {
+    width: 50px;
+  }
+}
